@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type='module' src="/script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="/script.js"></script>
     <title>Calculadora de IMC</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="cajaFormulario">
+      <form onSubmit="calcularIMC(); return false">
+        <input type="text" id="altura" placeholder="Altura en cm" />
+        <input type="text" id="peso" placeholder="Peso en libras" />
+        <!-- <input type="text" id="edad" placeholder="Edad" /> -->
+        <button type="submit">Calcular IMC</button>
+      </form>
+    </div>
+    <div class="cajaRespuesta">
+      <h2 id="aquiRespuesta" style="font-size: xx-large;"></h2>
+    </div>
+  </body>
 </html>
